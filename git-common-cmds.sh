@@ -7,7 +7,7 @@ function gcmds() {
 	col_cmd="column -N 'Common Git Command (alias in braces),Description' -t -s'|' -W2"
 	sed_cmd="sed -n"
 	sed_reg="-e s/^#.*//" # remove any comments from the file when passing it to 'column'
-	f="~/.git-common" # Your file that holds all the git commands and explainations
+	f="git-common" # Your file that holds all the git commands and explainations
 	if [[ "$1" == "" ]]; then
 		sed_cmd="sed"
 	elif [[ "$1" == "help" || "$1" == "h" ]]; then
