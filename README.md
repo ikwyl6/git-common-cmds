@@ -6,6 +6,6 @@ I'm a slight newbie to ```git``` and using and trying to remember what all the l
 You also can insert flags to print out only that subection of commands and explaination.
 
 ## Usage
-Create a ```~/.git-common``` file in your homedir that can have comments ```#``` on any line. Any other line in this file needs to be in two columns and ```COMMAND``` needs to be seaprated by a `|` and then ```EXPLAINATION```:
+Create a ```~/.git-common``` file in your homedir that lists all the commands an the explainations in it. You can have comments ```#``` on any line. Any other line in this file needs to be in two columns and ```COMMAND``` needs to be seaprated by a `|` and then ```EXPLAINATION```:
 ```git add -p|Only add certain parts of the file to the commit using the interactive or patch (-p) flag```
 Place this function in your ```.bashrc``` file and run ```source ~/.bashrc``` and away you go.
