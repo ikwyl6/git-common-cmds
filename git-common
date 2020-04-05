@@ -1,0 +1,14 @@
+# Sample file for git-common-cmds.sh on github (https://github.com/ikwyl6/git-common-cmds/)
+
+# Format:
+# You can add a subection to your list as follows:
+----- GIT GENERAL -----|
+git status|displays status of your working tree
+'A..B' and 'A...B'|double dot means all of the commits that B has that A doesn't. Triple dot means both the commits that A has and that B doesn't have.
+
+#
+# some comments
+#
+----- ANOTHER SECTION HEADER -----|
+git show|show the diff of what was just committed
+
