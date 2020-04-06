@@ -8,7 +8,7 @@ function gcmds() {
 	table_header="Common Git Command (alias in braces),Description" # for 'column' cmd
 	col_cmd="column -N '$table_header' -t -s'$cmd_expl_separator' -W2"
 	sed_cmd="sed -n" # default sed cmd used when you are passing this function a param.
-	sed_reg="-e s/^#.*//" # remove any comments from the file when passing it to 'column'
+	sed_reg="-e '/^#.*/d'" # remove any comments from the file when passing it to 'column'
 	f="git-common" # Your file that holds all the git commands and explainations
 
 	if [[ "$1" == "" ]]; then
