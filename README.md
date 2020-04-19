@@ -11,6 +11,7 @@ You also can insert flags to print out only that subection of commands and expla
 ```GIT COMMAND``` separated by a `|` and then the ```EXPLAINATION``` of that command, for example:
  
 ```git add -p|THIS IS MY HELPFUL DESCRIPTION OF THIS COMMAND THAT EXPLAINS WHAT THIS GIT COMMAND DOES```
+
 (there are some simple examples in the ```git-common``` file in repo):
 
 ## Usage
