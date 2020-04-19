@@ -10,7 +10,7 @@ You also can insert flags to print out only that subection of commands and expla
 
 ```GIT COMMAND``` separated by a `|` and then the ```EXPLAINATION``` of that command. 
 * Here is a one line example (there are some simple examples in the ```git-common``` file in repo): 
-```git add -p|THIS IS MY HELPFUL DESCRIPTION OF THIS COMMAND```
+```git add -p|THIS IS MY HELPFUL DESCRIPTION OF THIS COMMAND THAT EXPLAINS WHAT THIS GIT COMMAND DOES```
 
 ## Usage
 1. Copy and edit the ```git-common``` file (or rename this file to a name of your choice) as ```~/.git-common``` in your homedir. 
