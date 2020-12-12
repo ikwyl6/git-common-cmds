@@ -8,9 +8,11 @@ You also can insert flags to print out only that subection of commands and expla
 ## Format of ```git-common``` file
 * Comments ```#``` can be on any line and won't be processed. Any other line in this file needs to have the following format:
 
-```GIT COMMAND``` separated by a `|` and then the ```EXPLAINATION``` of that command. 
-* Here is a one line example (there are some simple examples in the ```git-common``` file in repo): 
+```GIT COMMAND``` separated by a `|` and then the ```EXPLAINATION``` of that command, for example:
+ 
 ```git add -p|THIS IS MY HELPFUL DESCRIPTION OF THIS COMMAND THAT EXPLAINS WHAT THIS GIT COMMAND DOES```
+
+(there are some simple examples in the ```git-common``` file in repo):
 
 ## Usage
 1. Copy and edit the ```git-common``` file (or rename this file to a name of your choice) as ```~/.git-common``` in your homedir. 
