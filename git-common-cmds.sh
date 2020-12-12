@@ -4,7 +4,7 @@
 # Function that displays the git common cmds by section depending if
 # you pass it a parameter. Otherwise it prints the whole thing.
 function gcmds() {
-	cmd_expl_separator="|" # seoarator between your 'git command' and explaination
+	cmd_expl_separator="|" # separator between your 'git command' and explaination
 	table_header="Common Git Command (alias in braces),Description" # for 'column' cmd
 	col_cmd="column -N '$table_header' -t -s'$cmd_expl_separator' -W2"
 	sed_cmd="sed -n" # default sed cmd used when you are passing this function a param.
@@ -14,7 +14,7 @@ function gcmds() {
 	if [[ "$1" == "" ]]; then
 		sed_cmd="sed"
 	elif [[ "$1" == "--help" || "$1" == "-h" ]]; then
-		echo "Usage $0 [ i | a | d | b | p | l ]"
+		echo "Usage gcmds [ i | a | d | b | p | l ]"
 		echo -e "\ti: Just prints the GIT GENERAL section of the $f file" 
 		echo -e "\ta: Print GIT ADD section of the $f file"
 		echo -e "\td: Print GIT DIFF section of the $f file"
@@ -36,11 +36,8 @@ function gcmds() {
 		sed_reg=$sed_reg" -e '/GIT\ LOG/,/^$/p'"
 	elif [[ "$1" == "--pull-request" || "$1" == "-pr" ]]; then
 		sed_reg=$sed_reg" -e '/GIT\ PULL\ REQUEST/,/^$/p'"
-
 	fi
 	# Run it
 	eval "$sed_cmd $sed_reg $f | $col_cmd"
 }
-
-
 
