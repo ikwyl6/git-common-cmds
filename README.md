@@ -1,3 +1,4 @@
+#### NOTE: This repository has been archived and has moved to: https://codeberg.org/ikwyl6/git-common-cmds
 # git-common-cmds
 A script that outputs a table on command line that lists and explains all git common commands for user to reference. Almost like a git tips and tricks list!
 
